@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class BasicOperation {
+	
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+	System.out.print("Enter x1:");
+	double x1 = scan.nextDouble();
+	System.out.print("Enter y1:");
+	double y1 = scan.nextDouble();
+	System.out.print("Enter x2:");
+	double x2 = scan.nextDouble();
+	System.out.print("Enter y2:");
+	double y2 = scan.nextDouble();
+	
+	double A = x2-x1;
+	double B = y2-y1;
+	
+	Double distance = Math.sqrt(A*A + B*B);
+	System.out.print("Total distance is:" + distance);
+	}
+}
